@@ -1,0 +1,24 @@
+{
+  "name": "@anio-fs/is",
+  "version": "0.0.0",
+  "description": "Check if path is a file/directory.",
+  "main": "./dist/package.min.mjs",
+  "typings": "./dist/index.d.ts",
+  "author": "Anio Software <info@anio.software>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anio-fs-org/is.git"
+  },
+  "devDependencies": {
+    "@anio-fs/path-type": "^3.0.1",
+    "@vipen/target-js": "^0.15.1",
+    "vipen": "^0.2.1"
+  },
+  "scripts": {
+    "prepare": "./node_modules/.bin/vipen ."
+  },
+  "files": [
+    "./dist/"
+  ]
+}
