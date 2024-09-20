@@ -1,6 +1,6 @@
 {
   "name": "@anio-fs/is",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Check if path is a file/directory.",
   "main": "./dist/package.min.mjs",
   "typings": "./dist/index.d.ts",
