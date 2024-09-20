@@ -1,4 +1,4 @@
-import {generateFromTemplate} from "vipen/autogenerate"
+import {generateFromTemplate} from "fourtune/autogenerate"
 import generateIndexFile from "./generateIndexFile.mjs"
 import generateTypesFile from "./generateTypesFile.mjs"
 
