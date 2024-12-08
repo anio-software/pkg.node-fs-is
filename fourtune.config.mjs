@@ -1,4 +1,4 @@
-import {generateFromTemplate} from "fourtune/autogenerate"
+/*import {generateFromTemplate} from "fourtune/autogenerate"
 import generateIndexFile from "./generateIndexFile.mjs"
 import generateTypesFile from "./generateTypesFile.mjs"
 
@@ -7,15 +7,19 @@ const asyncToSync = {
 	"export default async function(": "export default function(",
 	"await getTypeOfPath": "getTypeOfPathSync"
 }
+*/
 
 export default {
-	realm: "js",
-	type: "package",
+	realm: {
+		name: "js",
+		type: "package"
+	},
 
 	autogenerate: {
+		/*
 		"sync.mjs": generateFromTemplate("src/template.mjs", asyncToSync),
 		"async.mjs": generateFromTemplate("src/template.mjs", {}),
 		"index.mjs": generateIndexFile(),
-		"types.d.ts": generateTypesFile()
+		"types.d.ts": generateTypesFile()*/
 	}
 }
