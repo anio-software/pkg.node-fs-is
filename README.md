@@ -8,10 +8,12 @@ import {
 	isRegularFile,
 	isDirectory,
 	isRegularDirectory,
+	isSymbolicLink,
 
 	isFileSync,
 	isRegularFileSync,
 	isDirectorySync,
 	isRegularDirectorySync,
+	isSymbolicLinkSync
 } from "@aniojs/node-fs-is"
 ```

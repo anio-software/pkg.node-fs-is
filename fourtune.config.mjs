@@ -2,7 +2,7 @@ import {generateFactoryFiles} from "@fourtune/realm-js/v0/autogenerate"
 
 let autogenerate = {}
 
-for (const method of ["isFile", "isRegularFile", "isDirectory", "isRegularDirectory"]) {
+for (const method of ["isFile", "isRegularFile", "isDirectory", "isRegularDirectory", "isSymbolicLink"]) {
 	autogenerate = {
 		...autogenerate,
 		...generateFactoryFiles({
