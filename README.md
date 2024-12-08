@@ -1,4 +1,4 @@
-# @anio-fs/is
+# @aniojs/node-fs-is
 
 Check if path is a file/directory.
 
@@ -13,5 +13,5 @@ import {
 	isRegularFileSync,
 	isDirectorySync,
 	isRegularDirectorySync,
-} from "@anio-fs/is"
+} from "@aniojs/node-fs-is"
 ```

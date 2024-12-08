@@ -1,5 +1,5 @@
 {
-  "name": "@anio-fs/is",
+  "name": "@aniojs/node-fs-is",
   "type": "module",
   "version": "0.0.0",
   "description": "Check if path is a file/directory.",
@@ -13,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anio-fs-org/is.git"
+    "url": "git+https://github.com/aniojs-org/node-fs-is.git"
   },
   "devDependencies": {
     "@aniojs/node-fs-path-type": "^1.0.1",
