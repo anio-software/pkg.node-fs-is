@@ -2,7 +2,7 @@
   "name": "@aniojs/node-fs-is",
   "type": "module",
   "version": "0.0.0",
-  "description": "Check if path is a file/directory.",
+  "description": "Check if path is a file/directory or symoblic link.",
   "exports": {
     ".": {
       "types": "./dist/default/index.min.d.mts",
