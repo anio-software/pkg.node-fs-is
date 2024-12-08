@@ -1,13 +1,17 @@
-/*import {generateFromTemplate} from "fourtune/autogenerate"
-import generateIndexFile from "./generateIndexFile.mjs"
-import generateTypesFile from "./generateTypesFile.mjs"
+import {generateFactoryFiles} from "@fourtune/realm-js/v0/autogenerate"
 
-const asyncToSync = {
-	"import {getTypeOfPath} from \"@anio-fs/path-type\"": "import {getTypeOfPathSync} from \"@anio-fs/path-type\"",
-	"export default async function(": "export default function(",
-	"await getTypeOfPath": "getTypeOfPathSync"
+let autogenerate = {}
+
+for (const method of ["isFile", "isRegularFile", "isDirectory", "isRegularDirectory"]) {
+	autogenerate = {
+		...autogenerate,
+		...generateFactoryFiles({
+			source_file: `src/__${method}XXX.as.mts`,
+			export_name: `${method}XXX`,
+			destination: "src/export"
+		})
+	}
 }
-*/
 
 export default {
 	realm: {
@@ -15,11 +19,5 @@ export default {
 		type: "package"
 	},
 
-	autogenerate: {
-		/*
-		"sync.mjs": generateFromTemplate("src/template.mjs", asyncToSync),
-		"async.mjs": generateFromTemplate("src/template.mjs", {}),
-		"index.mjs": generateIndexFile(),
-		"types.d.ts": generateTypesFile()*/
-	}
+	autogenerate
 }
