@@ -17,7 +17,7 @@ export async function implementation(
 	const path_type = await dependencies.getTypeOfPath(input_path)
 //>	const path_type = dependencies.getTypeOfPath(input_path)
 
-	// do something with path_type
+	if (path_type === "regularFile") return true
 
 	return false
 }

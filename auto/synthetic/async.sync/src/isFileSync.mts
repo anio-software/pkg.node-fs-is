@@ -13,7 +13,8 @@ export function implementation(
 
 	const path_type = dependencies.getTypeOfPath(input_path)
 
-	// do something with path_type
+	if (path_type === "regularFile") return true
+	if (path_type === "linkToFile") return true
 
 	return false
 }
