@@ -1,20 +1,20 @@
 {
   "name": "@aniojs/node-fs-is",
-  "type": "module",
   "version": "0.1.0",
+  "author": "Anio Software <info@anio.software>",
   "description": "Check if path is a file/directory or symoblic link.",
+  "license": "MIT",
   "exports": {
     ".": {
       "types": "./dist/default/index.min.d.mts",
       "import": "./dist/default/index.min.mjs"
     }
   },
-  "author": "Anio Software <info@anio.software>",
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aniojs-org/node-fs-is.git"
   },
+  "type": "module",
   "devDependencies": {
     "@aniojs/node-fs-path-type": "^1.0.1",
     "@fourtune/core": "^0.1101.0",
