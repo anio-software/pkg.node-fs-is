@@ -16,7 +16,11 @@ for (const method of ["isFile", "isRegularFile", "isDirectory", "isRegularDirect
 export default {
 	realm: {
 		name: "js",
-		type: "package"
+		type: "package",
+
+		options: {
+			runtime: "node"
+		}
 	},
 
 	autogenerate
