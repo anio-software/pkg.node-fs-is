@@ -6,10 +6,8 @@ import {createContext} from "@fourtune/realm-js/v0/runtime"
 
 import {isDirectoryFactory as factory} from "#~synthetic/user/export/isDirectoryFactory.mts"
 
-let __fnImplementation: any = null
-
 export async function isDirectory(input_path: string) : Promise<boolean> {
-	if (__fnImplementation === null) __fnImplementation = factory(createContext());
+	const __fnImplementation = factory(createContext())
 
 	return await __fnImplementation(input_path)
 }
