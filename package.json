@@ -16,7 +16,7 @@
   },
   "type": "module",
   "devDependencies": {
-    "@aniojs/node-fs-path-type": "^1.0.4",
+    "@aniojs/node-fs-path-type": "^1.0.6",
     "@fourtune/core": "^0.1101.0",
     "@fourtune/realm-js": "^1.0.3",
     "fourtune": "^0.30000.1"
