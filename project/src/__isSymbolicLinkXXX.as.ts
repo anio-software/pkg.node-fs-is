@@ -20,9 +20,10 @@ export async function __implementation(
 	const path_type = await dependencies.getTypeOfPath(input_path)
 //>	const path_type = dependencies.getTypeOfPath(input_path)
 
-	if (path_type === "linkToFile") return true
-	if (path_type === "linkToDir") return true
-	if (path_type === "brokenLink") return true
+	if (path_type === "link:file") return true
+	if (path_type === "link:dir") return true
+	if (path_type === "link:broken") return true
+	if (path_type === "link:error") return true
 
 	return false
 }
