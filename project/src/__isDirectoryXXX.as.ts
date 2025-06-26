@@ -12,16 +12,16 @@ export async function __implementation(
 //>export function __implementationSync(
 	contextOptions: EnkoreJSRuntimeContextOptions,
 	dependencies: __EnkoreFunctionDependencies,
-	input_path: string
+	inputPath: string
 ) : Promise<boolean> {
 //>) : boolean {
 	const context = createContext(contextOptions, 0)
 
-	const path_type = await dependencies.getTypeOfPath(input_path)
-//>	const path_type = dependencies.getTypeOfPath(input_path)
+	const pathType = await dependencies.getTypeOfPath(inputPath)
+//>	const pathType = dependencies.getTypeOfPath(inputPath)
 
-	if (path_type === "dir:regular") return true
-	if (path_type === "link:dir") return true
+	if (pathType === "dir:regular") return true
+	if (pathType === "link:dir") return true
 
 	return false
 }
