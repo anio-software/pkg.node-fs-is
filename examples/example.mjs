@@ -4,7 +4,7 @@ import {
 	isDirectory,
 	isRegularDirectory,
 	isSymbolicLink
-} from "../dist/default/index.min.mjs"
+} from "../products/project/dist/default/index.min.mjs"
 
 console.log(await isFile("examples/files/a-file"))
 console.log(await isRegularFile("examples/files/link-to-file"))
