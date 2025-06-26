@@ -8,8 +8,8 @@ import type {AnioJsDependencies} from "#~synthetic/async.sync/Dependencies.d.mts
 
 export type {AnioJsDependencies}
 
-export async function implementation(
-//>export function implementation(
+export async function __implementation(
+//>export function __implementationSync(
 	contextOptions: EnkoreJSRuntimeContextOptions,
 	dependencies: AnioJsDependencies,
 	input_path: string
