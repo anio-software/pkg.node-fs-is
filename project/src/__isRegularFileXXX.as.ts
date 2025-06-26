@@ -3,15 +3,15 @@ import {
 	createContext
 } from "@anio-software/enkore.js-runtime"
 
-import type {AnioJsDependencies} from "#~synthetic/async.sync/Dependencies.d.mts"
-//>import type {AnioJsDependencies} from "#~synthetic/async.sync/DependenciesSync.d.mts"
+import type {__EnkoreFunctionDependencies} from "#~src/Dependencies.ts"
+//>import type {__EnkoreFunctionDependencies} from "#~src/DependenciesSync.ts"
 
-export type {AnioJsDependencies}
+export type {__EnkoreFunctionDependencies}
 
 export async function __implementation(
 //>export function __implementationSync(
 	contextOptions: EnkoreJSRuntimeContextOptions,
-	dependencies: AnioJsDependencies,
+	dependencies: __EnkoreFunctionDependencies,
 	input_path: string
 ) : Promise<boolean> {
 //>) : boolean {
