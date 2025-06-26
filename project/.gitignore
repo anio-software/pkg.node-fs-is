@@ -1,0 +1,14 @@
+# This file is automatically managed by enkore
+# DO NOT ADD ENTRIES HERE, THEY WILL BE REMOVED
+/src/Dependencies.ts
+/src/DependenciesSync.ts
+/src/isDirectory.ts
+/src/isDirectorySync.ts
+/src/isFile.ts
+/src/isFileSync.ts
+/src/isRegularDirectory.ts
+/src/isRegularDirectorySync.ts
+/src/isRegularFile.ts
+/src/isRegularFileSync.ts
+/src/isSymbolicLink.ts
+/src/isSymbolicLinkSync.ts
